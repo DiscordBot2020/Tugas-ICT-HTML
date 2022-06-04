@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="style.css" rel="stylesheet" type="text/css"> -->
+    <title>Farrel NP</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <div class="container">
+        <hr id="line">
+        <ul id="decoration">
+            <li>
+                <div id="red"> </div>
+            </li>
+            <li>
+                <div id="yellow"></div>
+            </li>
+            <li>
+                <div id="green"></div>
+            </li>
+        </ul>
+        <header>
+            <nav class="navigation-bar">
+                <ul>
+                    <li>
+                        <a href="https://instagram.com/farrelpramono2528" target="_blank">INSTAGRAM</a>
+                    </li>
+                    <li>
+                        <a href="mailto:farrelnaufalpramono@smpit-nfbogor.sch.id" target="_blank">EMAIL</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="about-me">
+            <h1 align="center">Hi! My Name is Farrel!<h1>
+            <span id="typed"></span>
+            <br>
+            <a><button class="bn632-hover bn26" onclick="ButtonClick()">Click Me!</button></a>
+        </div>
+
+
+        <!--script-->
+
+
+    <script type="text/javascript">
+        var typed = new Typed('#typed', {
+            strings: ["Sebuah Projek Portofolio HTML/CSS", "Tugas ICT Semester 2"],
+            typeSpeed: 30
+          });
+        </script>
+
+        <script>
+function ButtonClick() {
+  alert("Halo");
+}
+</script>
+
+
+
+<!--CSS-->
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+    background-image: url("https://uhdwallpapers.org/uploads/converted/20/01/14/the-mandalorian-5k-1920x1080_477555-mm-90.jpg");
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#line {
+    position: absolute;
+    margin-top: 2rem;
+    width: 99%;
+    left: 0.3rem;
+    border-top: none;
+    border-color: rgb(116, 116, 116);
+}
+
+#decoration {
+    margin-top: 0.3rem;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#red {
+    margin-left: 0.3rem;
+    background-color: rgb(255, 82, 82);
+    border-radius: 50%;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+#yellow {
+    margin-left: 0.3rem;
+    background-color: rgb(253, 212, 98);
+    border-radius: 50%;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+#green {
+    margin-right: 0.4rem;
+    margin-left: 0.3rem;
+    background-color: rgb(86, 255, 80);
+    border-radius: 50%;
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+
+header {
+    font-family: 'Poppins', sans-serif;
+    margin-top: auto;
+    position: absolute;
+    height: 100%;
+    display: flex;
+}
+
+.navigation-bar ul {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+.navigation-bar li {
+    margin-left: 3rem;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.navigation-bar ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.navigation-bar ul li a:hover {
+    color: rgb(218, 214, 214);
+}
+
+
+
+.container {
+    position: relative;
+    border-radius: 0.3rem;
+    box-shadow: 10px 10px 10px rgb(59, 59, 59);
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    height: 75%;
+}
+
+
+#about-me {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+}
+
+#about-me span {
+    font-size: 1rem;
+    margin-top: 1rem;
+
+}
+
+#about-me h {
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+
+/**
+footer content
+**/
+
+footer {
+    display: flex;
+    width: 30%;
+    position: absolute;
+    justify-content: center;
+    top: 95%;
+    left: 70%;
+}
+
+@media screen and (max-width:425px) {
+    body {
+        height: 120vh;
+        font-size: 70%;
+    }
+    .container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        width: 85%;
+        height: 95%;
+    }
+    footer {
+        width: 100%;
+        top: 92%;
+        left: -4%
+    }
+    #about-me {
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+        margin-left: 2rem;
+        margin-top: 10rem;
+        text-align: center;
+    }
+    
+@media screen and (max-width:320px) {
+    body {
+        height: 150vh;
+        font-size: 60%;
+    }
+    .container {
+        background-color: rgb(71, 71, 71);
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+        height: 100%;
+    }
+    footer {
+        width: 100%;
+        top: 93%;
+        left: 1%
+    }
+    #about-me {
+        color: rgb(179, 179, 179);
+        font-family: 'Poppins', sans-serif;
+        margin-left: 0.8rem;
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        height: 100vh;
+        font-size: 60%;
+    }
+    .container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+        height: 95%;
+    }
+}
+
+@media screen and (max-height:665px) {
+    body {
+        height: 100vh;
+        font-size: 70%;
+    }
+    .container {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 90%;
+        height: 95%;
+    }
+  }
+}
+
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+</style>
+
+
+<!--END OF CSS-->
+
+
+    </body>
+</html>
+
+<!--
+Div Class
+Span (Line 43)
+-->
